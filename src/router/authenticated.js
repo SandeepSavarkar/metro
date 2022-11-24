@@ -24,13 +24,13 @@ const Authenticated = () => {
 const BottomTabNavigation = () => {
   return (
     <Tab.Navigator
-      tabBarOptions={{
+      screenOptions={{
         activeTintColor: Color.PRIMARY_DARK,
         inactiveTintColor: Color.BLACK,
         labelStyle: { marginBottom: 10 },
       }}
     >
-      <Tab.Screen
+      {/* <Tab.Screen
         name={Routes.Home}
         component={Home}
         options={{
@@ -38,7 +38,7 @@ const BottomTabNavigation = () => {
             <IonIcons name="md-home-outline" color={color} size={size} />
           ),
         }}
-      />
+      /> */}
       <Tab.Screen
         name={Routes.OrderMedicine}
         component={Home}
